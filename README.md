@@ -1,74 +1,39 @@
-# Jam #2
+# SeekWhence
 
-Welcome to the second langjam!
+A simple programming language built around mathematical sequences as a primitive.
 
-This jam begins at 7pm UK time on the 3rd of December and runs until 7pm UK time on the 10th of December.
+SeekWhence was created in 28 hours over the course of a week for [LangJam 2](https://github.com/langjam/jam0002).
 
-## Theme
+## Installation
 
-The theme of jam is: patterns.
+- Clone or download the source
+- Make sure you have Python 3.8.10 or higher installed
 
-Patterns are used in many ways in programming languages, for example pattern matching, glob patterns, and many more. This jam is to explore the ways patterns could show up in a programming language.
+To run a SeekWhence script, run 
+```bash
+chmod +x ./seekwhence
+./seekwhence [script path]
+```
 
-## Getting started
+To run all interpreter tests, run 
+```bash
+python3 src/test.py tests
+```
 
-To participate:
-* fork this repo
-* make a copy of the TEMPLATE directory
-* rename the copy to the name of your languages (for example, if your language is "starlang" rename TEMPLATE to starlang)
-* update the TEAM file in the directory with the name of your team members. Team members should be listed by their GitHub username. The first username on the list of team members is the team captain (see below)
-* send a PR to submit your project. In this PR, only touch files in the directory you're creating for your language and no other directories.
 
-Language names are "first come, first served" so if someone else takes your language name you'll need to come up with a new one.
+## Examples
 
-See below for more information on submitting your project.
+You can find several examples of SeekWhence programs in the `examples` folder. Most of these also serve as the test cases for the interpreter and standard library; you can find the descriptions of their expected output in the `tests` folder.
 
-## Language names
 
-Please keep your language name "family-friendly". Sole discretion for what counts as "family friendly" is left up to JT, but if the name is safe/kid-friendly you should be fine.
+## Language Documentation
 
-## Team sizes
+- [Basic Syntax](./docs/basic-syntax.md)
+- [Sequences and Slices](./docs/sequences.md)
+- [Namespaces and Imports](./docs/namespaces.md)
+- Standard Library
+  - [builtin](./docs/stdlib/builtin.md) - Core functions and constants
+  - [math](./docs/stdlib/math.md) - Additional math functions and constants
+  - [strutils](./docs/stdlib/strutils.md) - String manipulation utilities
+  - [time](./docs/stdlib/time.md) - Time processing utilities
 
-Teams can have one person or multiple people.
-
-## Time limits
-
-Each person on the team can spend a maximum of 48 hours coding and 12 hours writing documentation and presentation. The final language, including all documentation and presentation, needs to be submitted using a PR to this repository before the cut-off time.
-
-## Submitting your project
-
-When you submit your project, send a PR that updates *only* your languages's directory and nothing else. 
-
-In the PR, submit:
-* your project's source
-* a README.md that describes how to build and use the project
-* sample files written in your language
-* links to any presentation you might have (websites, videos, etc)
-
-**Please note:** only submit source files and documentation. Please don't submit compiled binaries for your project.
-
-## Team captains
-
-The team captains will be the ones responsible for updating the submission. You may update your project up until the cut-off time.
-
-## Help, I've never used GitHub
-
-You can read through the helpful [hello world from GitHub](https://guides.github.com/activities/hello-world/). If you've never forked a repo, you can check out the [GitHub forking tutorial](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
-
-## Timeline
-
-The langjam begins at 7pm UK time 3rd of December and runs until the 7pm UK time the 10th of December. At 7pm UK time on the 10th of December, we'll end submissions for the jam. **Make sure you have submitted your PR before this cut-off**.
-
-## Judging
-
-Judging will take place after the jam has ended. Once judging has concluded, we'll pick a set of winning projects that will become part of a video on the [Systems with JT](https://www.youtube.com/user/giard321) YouTube channel.
-
-You're welcome to try out other projects. We'll have a way to leave comments so you can share your thoughts and vote on which you liked best, too.
-
-## Other rules
-
-General information about the langjam is available in the main [langjam README](https://github.com/langjam/langjam/blob/main/README.md).
-
-## Social media
-
-If you like, you can tag your social media posts with `#langjam2021` to help others find you.
